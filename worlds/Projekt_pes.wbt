@@ -15,4 +15,5 @@ RectangleArena {
 TexturedBackgroundLight {
 }
 Spot {
+  controller "Pes_1_2"
 }
