@@ -7,13 +7,13 @@
 
 % uncomment the next two lines if you want to use
 % MATLAB's desktop to interact with the controller:
-%desktop;
-%keyboard;
+desktop;
+keyboard;
 NUMBER_OF_LEDS = 8;
 NUMBER_OF_JOINTS =12;
 NUMBER_OF_CAMERAS =5;
 
-TIME_STEP = 32;
+TIME_STEP = 64;
 
 
 % get and enable devices, e.g.:

@@ -15,5 +15,6 @@ for i=1:n_steps_to_achieve_target
        current_position(j)= current_position(j)+step_difference(j);
        wb_motor_set_position(motors(j), current_position(j));
     end
+    step();
 end
 
