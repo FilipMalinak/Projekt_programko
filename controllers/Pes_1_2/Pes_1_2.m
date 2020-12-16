@@ -7,14 +7,15 @@
 
 % uncomment the next two lines if you want to use
 % MATLAB's desktop to interact with the controller:
-%desktop;
-%keyboard;
+
 NUMBER_OF_LEDS = 8;
 NUMBER_OF_JOINTS =12;
 NUMBER_OF_CAMERAS =5;
 
 TIME_STEP = 64;
 
+desktop;
+keyboard;
 
 % get and enable devices, e.g.:
 %  camera = wb_robot_get_device('camera');
@@ -78,11 +79,12 @@ leds(7) = wb_robot_get_device('right middle down led');
 leds(8) = wb_robot_get_device('right bottom led');
 
 
-while wb_robot_step(TIME_STEP) ~= -1 
+
   
+
+while wb_robot_step(TIME_STEP) ~= -1  
   
-  
-  
+  lie_down(4.0,motors);
   
 end
 
