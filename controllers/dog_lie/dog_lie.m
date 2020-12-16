@@ -7,8 +7,8 @@
 
 % uncomment the next two lines if you want to use
 % MATLAB's desktop to interact with the controller:
-desktop;
-keyboard;
+%desktop;
+%keyboard;
 NUMBER_OF_LEDS = 8;
 NUMBER_OF_JOINTS =12;
 NUMBER_OF_CAMERAS =5;
@@ -33,10 +33,10 @@ motors(11) = wb_robot_get_device('rear right shoulder rotation motor');
 motors(12) = wb_robot_get_device('rear right elbow motor');
 
 
-motors_target_pos = [-0.40 , -0.99 , 1.59, ... %Front left leg
-                     0.40,   -0.99, 1.59, ...  %Front right leg
-                     -0.40 , -0.99 , 1.59, ... %Rear left leg
-                     0.40,   -0.99, 1.59];     %Rear right leg
+motors_target_pos = [ 0, 0 , 0, ... %Front left leg
+                     0,   0, 0, ...  %Front right leg
+                     0 , 0 , 0, ... %Rear left leg
+                     0,   0, 0];     %Rear right leg
 
 % get and enable devices, e.g.:
 %  camera = wb_robot_get_device('camera');
