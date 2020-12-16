@@ -14,8 +14,8 @@ NUMBER_OF_CAMERAS =5;
 
 TIME_STEP = 64;
 
-desktop;
-keyboard;
+%desktop;
+%keyboard;
 
 % get and enable devices, e.g.:
 %  camera = wb_robot_get_device('camera');
@@ -84,8 +84,15 @@ leds(8) = wb_robot_get_device('right bottom led');
 
 while wb_robot_step(TIME_STEP) ~= -1  
   
-  lie_down(4.0,motors);
-  
+  lie_down(2.0,motors);
+  stand_up(0.2,motors);
+  lie_down(2.0,motors);
+  stand_up(2.0,motors);
+  sit_down(2.0,motors);
+  hold_position(2.0);
+  stand_up(2.0,motors);
+  give_paw(motors);
+  stand_up(2.0,motors);
 end
 
 
