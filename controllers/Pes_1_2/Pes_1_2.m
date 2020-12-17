@@ -84,16 +84,18 @@ leds(8) = wb_robot_get_device('right bottom led');
 
 while wb_robot_step(TIME_STEP) ~= -1  
   
-  %lie_down(2.0,motors);
-  %stand_up(0.2,motors);
-  %lie_down(2.0,motors);
-  %stand_up(2.0,motors);
-  %sit_down(2.0,motors);
-  %hold_position(2.0);
-  %stand_up(2.0,motors);
-  %give_paw(motors);
-  %stand_up(2.0,motors);
-  walk(motors);
+  lie_down(2.0,motors);
+  stand_up(0.2,motors);
+  lie_down(2.0,motors);
+  stand_up(2.0,motors);
+  sit_down(2.0,motors);
+  hold_position(2.0);
+  stand_up(2.0,motors);
+  give_paw(motors);
+  stand_up(2.0,motors);
+  walk_away(motors);
+  stand_up(2.0,motors);
+  hold_position(5.0);
 end
 
 
