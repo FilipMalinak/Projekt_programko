@@ -84,6 +84,9 @@ leds(8) = wb_robot_get_device('right bottom led');
 
 while wb_robot_step(TIME_STEP) ~= -1  
   
+  wb_camera_enable(cameras(1), 2 * TIME_STEP);
+  wb_camera_enable(cameras(2), 2 * TIME_STEP);
+  
   lie_down(2.0,motors);
   stand_up(0.2,motors);
   lie_down(2.0,motors);

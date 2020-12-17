@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 0.11338650845834744 -0.97094003525677 -0.21075803100998852 4.104342531691448
-  position 5.22678468191817 2.7186351375187443 -3.249573111181101
+  orientation 0.2144212509967349 -0.9692718805610647 -0.12056346326566969 5.231869249526532
+  position 4.644684662101511 2.100771492374423 2.7329717704348964
 }
 TexturedBackground {
 }
@@ -15,6 +15,77 @@ RectangleArena {
 }
 TexturedBackgroundLight {
 }
+ConveyorBelt {
+  translation 0 0 -0.94
+  size 10 0.4 0.5
+}
 Spot {
   controller "Pes_1_2"
+}
+SolidBox {
+  translation -3.34 0.53 -0.91
+  name "box_red"
+  size 0.25 0.25 0.25
+  appearance PBRAppearance {
+    baseColor 1 0 0
+    baseColorMap ImageTexture {
+      url [
+        "textures/snow.jpg"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+  physics Physics {
+  }
+}
+SolidBox {
+  translation -1.43 0.53 -0.91
+  name "box_blue"
+  size 0.25 0.25 0.25
+  appearance PBRAppearance {
+    baseColor 0 0 1
+    baseColorMap ImageTexture {
+      url [
+        "textures/snow.jpg"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+  physics Physics {
+  }
+}
+SolidBox {
+  translation -2.37 0.53 -0.91
+  name "box_white"
+  size 0.25 0.25 0.25
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "textures/snow.jpg"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+  physics Physics {
+  }
+}
+SolidBox {
+  translation -4.29 0.53 -0.91
+  name "box_black"
+  size 0.25 0.25 0.25
+  appearance PBRAppearance {
+    baseColor 0 0 0
+    baseColorMap ImageTexture {
+      url [
+        "textures/snow.jpg"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+  physics Physics {
+  }
 }
