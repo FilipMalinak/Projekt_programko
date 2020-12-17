@@ -1,9 +1,9 @@
 
-function color = this_color(cameras(1))
+function color = this_color(image)
 
-R_pixels = image_rgb (:,:,1);
-G_pixels = image_rgb (:,:,2);
-B_pixels = image_rgb (:,:,3);
+R_pixels = sum(sum(image(:,:,1)));
+G_pixels = sum(sum(image(:,:,2)));
+B_pixels = sum(sum(image(:,:,3)));
 
 R_vector_size = size(R_pixels);
 R_size = R_vector_size(1) * R_vector_size(2);
