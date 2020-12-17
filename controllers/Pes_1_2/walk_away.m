@@ -1,4 +1,4 @@
-function [] = walk_av(motors)
+function [] = walk_away(motors)
 initial_time=wb_robot_get_time();
 motors_target_pos = [-0.2 , 0.0 , 0.0, ... %Front left leg
                      0.2,   0.0,  0.0, ...  %Front right leg
