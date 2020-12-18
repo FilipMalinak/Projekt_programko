@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 0.2144212509967349 -0.9692718805610647 -0.12056346326566969 5.231869249526532
-  position 4.644684662101511 2.100771492374423 2.7329717704348964
+  orientation -0.026951248881342912 -0.9768873310254771 -0.2120489864763704 2.89453391051081
+  position -0.4600836041492896 1.4728007654064708 -2.852554856673384
 }
 TexturedBackground {
 }
@@ -23,7 +23,7 @@ Spot {
   controller "Pes_1_2"
 }
 SolidBox {
-  translation -3.34 0.53 -0.91
+  translation -2.48 0.53 -0.91
   name "box_red"
   size 0.25 0.25 0.25
   appearance PBRAppearance {
@@ -40,7 +40,7 @@ SolidBox {
   }
 }
 SolidBox {
-  translation -1.43 0.53 -0.91
+  translation -1.09 0.53 -0.91
   name "box_blue"
   size 0.25 0.25 0.25
   appearance PBRAppearance {
@@ -57,10 +57,11 @@ SolidBox {
   }
 }
 SolidBox {
-  translation -2.37 0.53 -0.91
+  translation 0.01 0.53 -0.91
   name "box_white"
   size 0.25 0.25 0.25
   appearance PBRAppearance {
+    baseColor 0 1 0
     baseColorMap ImageTexture {
       url [
         "textures/snow.jpg"
@@ -73,7 +74,7 @@ SolidBox {
   }
 }
 SolidBox {
-  translation -4.29 0.53 -0.91
+  translation -0.59 0.53 -0.91
   name "box_black"
   size 0.25 0.25 0.25
   appearance PBRAppearance {
