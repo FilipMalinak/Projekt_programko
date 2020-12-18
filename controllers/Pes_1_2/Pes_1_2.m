@@ -31,7 +31,7 @@ keyboard;
 
 % initialize devices
 cameras = [];
-camera_names = [ "left head camera_right head camera_left flank camera_right flank camera_rear camera" ];
+camera_names = [ "left head camera_right head camera_left flank camera_right flank camera_rear camera MultiSense S21" ];
 
   
   cameras(1) = wb_robot_get_device('left head camera');
@@ -48,8 +48,8 @@ camera_names = [ "left head camera_right head camera_left flank camera_right fla
   
   cameras(5) = wb_robot_get_device('rear camera');
   %wb_camera_enable(cameras(5), TIME_STEP);
-
-
+  
+  
 motors=[];  
 motors(1) = wb_robot_get_device('front left shoulder abduction motor');
 motors(2) = wb_robot_get_device('front left shoulder rotation motor');
@@ -87,7 +87,9 @@ while wb_robot_step(TIME_STEP) ~= -1
   wb_camera_enable(cameras(1), 2 * TIME_STEP);
  %wb_camera_enable(cameras(2), 2 * TIME_STEP);
   image=wb_camera_get_image(cameras(1));
-  color=this_color(image);
+  image_rgb1=fig_to_jpg(image);
+  image_rgb2=imread(image_rgb1);
+  color = this_color(image_rgb)
   
   %lie_down(2.0,motors);
   %stand_up(0.2,motors);
