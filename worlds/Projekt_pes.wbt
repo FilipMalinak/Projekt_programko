@@ -3,27 +3,28 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.026951248881342912 -0.9768873310254771 -0.2120489864763704 2.89453391051081
-  position -0.4600836041492896 1.4728007654064708 -2.852554856673384
+  orientation -0.05627449047651553 0.9825072952693555 0.17751787646348194 2.537714525281326
+  position 3.031444224460737 2.2547911950813004 -3.7737296893860046
 }
 TexturedBackground {
 }
 RectangleArena {
   translation -0.12 0 0
-  floorSize 10 10
+  floorSize 20 10
   wallHeight 1
 }
 TexturedBackgroundLight {
 }
 ConveyorBelt {
   translation 0 0 -0.94
-  size 10 0.4 0.5
+  size 20 0.4 0.5
+  speed 0.2
 }
 Spot {
   controller "Pes_1_2"
 }
 SolidBox {
-  translation -2.48 0.53 -0.91
+  translation -3 0.53 -0.91
   name "box_red"
   size 0.25 0.25 0.25
   appearance PBRAppearance {
@@ -40,7 +41,7 @@ SolidBox {
   }
 }
 SolidBox {
-  translation -1.09 0.53 -0.91
+  translation -1 0.53 -0.91
   name "box_blue"
   size 0.25 0.25 0.25
   appearance PBRAppearance {
@@ -57,7 +58,7 @@ SolidBox {
   }
 }
 SolidBox {
-  translation 0.01 0.53 -0.91
+  translation -5 0.53 -0.91
   name "box_white"
   size 0.25 0.25 0.25
   appearance PBRAppearance {
@@ -74,7 +75,7 @@ SolidBox {
   }
 }
 SolidBox {
-  translation -0.59 0.53 -0.91
+  translation -7.02 0.53 -0.91
   name "box_black"
   size 0.25 0.25 0.25
   appearance PBRAppearance {
