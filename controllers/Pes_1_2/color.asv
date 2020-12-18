@@ -1,0 +1,14 @@
+function [color] = color(image)
+
+RGB(1) = sum(sum(image(:,:,3)));
+RGB(2) = sum(sum(image(:,:,1)));
+RGB(3) = sum(sum(image(:,:,2)));
+
+[M,I] = max(RGB);
+
+if RGB(I)>
+
+
+
+
+end

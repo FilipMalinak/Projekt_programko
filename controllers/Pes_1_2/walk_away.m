@@ -9,7 +9,7 @@ movement_decomposition(motors_target_pos,2,motors)
 
 initial_time=wb_robot_get_time();
 time=initial_time;
-while (time-initial_time<3)
+while (time-initial_time<5)
    
     time= wb_robot_get_time()
     if (time-initial_time < pi/19)

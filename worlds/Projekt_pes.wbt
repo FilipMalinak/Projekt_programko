@@ -3,27 +3,28 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 0.2144212509967349 -0.9692718805610647 -0.12056346326566969 5.231869249526532
-  position 4.644684662101511 2.100771492374423 2.7329717704348964
+  orientation -0.05627449047651553 0.9825072952693555 0.17751787646348194 2.537714525281326
+  position 3.031444224460737 2.2547911950813004 -3.7737296893860046
 }
 TexturedBackground {
 }
 RectangleArena {
   translation -0.12 0 0
-  floorSize 10 10
+  floorSize 20 10
   wallHeight 1
 }
 TexturedBackgroundLight {
 }
 ConveyorBelt {
   translation 0 0 -0.94
-  size 10 0.4 0.5
+  size 20 0.4 0.5
+  speed 0.2
 }
 Spot {
   controller "Pes_1_2"
 }
 SolidBox {
-  translation -3.34 0.53 -0.91
+  translation -3 0.53 -0.91
   name "box_red"
   size 0.25 0.25 0.25
   appearance PBRAppearance {
@@ -40,7 +41,7 @@ SolidBox {
   }
 }
 SolidBox {
-  translation -1.43 0.53 -0.91
+  translation -1 0.53 -0.91
   name "box_blue"
   size 0.25 0.25 0.25
   appearance PBRAppearance {
@@ -57,10 +58,11 @@ SolidBox {
   }
 }
 SolidBox {
-  translation -2.37 0.53 -0.91
+  translation -5 0.53 -0.91
   name "box_white"
   size 0.25 0.25 0.25
   appearance PBRAppearance {
+    baseColor 0 1 0
     baseColorMap ImageTexture {
       url [
         "textures/snow.jpg"
@@ -73,7 +75,7 @@ SolidBox {
   }
 }
 SolidBox {
-  translation -4.29 0.53 -0.91
+  translation -7.02 0.53 -0.91
   name "box_black"
   size 0.25 0.25 0.25
   appearance PBRAppearance {

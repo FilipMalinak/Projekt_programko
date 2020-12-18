@@ -86,22 +86,56 @@ while wb_robot_step(TIME_STEP) ~= -1
   
   wb_camera_enable(cameras(1), 2 * TIME_STEP);
   wb_camera_enable(cameras(2), 2 * TIME_STEP);
+  image=wb_camera_get_image(cameras(1));
+  i=color(image)
   
-  lie_down(2.0,motors);
-  stand_up(0.2,motors);
-  lie_down(2.0,motors);
-  stand_up(2.0,motors);
-  sit_down(2.0,motors);
-  hold_position(2.0);
-  stand_up(2.0,motors);
-  give_paw(motors);
-  stand_up(2.0,motors);
-  walk_away(motors);
-  stand_up(2.0,motors);
-  hold_position(5.0);
+  
+  switch i
+   case 1
+   
+   lie_down(1.5,motors);
+   stand_up(0.2,motors);
+   lie_down(1.8,motors);
+   stand_up(1.5,motors);
+   
+   case 2
+   
+   sit_down(1.5,motors);
+   hold_position(2.5);
+   stand_up(1.0,motors);
+      
+   case 3
+   
+   give_paw(motors);
+   stand_up(1.0,motors);
+   
+   
+   case 4
+   
+   walk_away(motors);
+   stand_up(2.0,motors);
+   hold_position(5.0);
+   
+   case 5
+   
+   stand_up(1.25,motors);
+   hold_position(1.25);
+   
+  end
 end
 
-
+%lie_down(2.0,motors);
+  %stand_up(0.2,motors);
+  %lie_down(2.0,motors);
+  %stand_up(2.0,motors);
+  %sit_down(2.0,motors);
+  %hold_position(2.0);
+  %stand_up(2.0,motors);
+  %give_paw(motors);
+  %stand_up(2.0,motors);
+  %walk_away(motors);
+  %stand_up(2.0,motors);
+  %hold_position(5.0);
 
 
 
